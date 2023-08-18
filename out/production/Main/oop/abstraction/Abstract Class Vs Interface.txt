@@ -1,0 +1,33 @@
+
+
+Abstract classes and interfaces are both used to achieve abstraction in Java. However, they have different purposes
+and features.
+
+Abstract classes are used to define a common base for a set of related classes. They can have abstract and non-abstract
+methods. Abstract methods are not implemented in the abstract class, but they must be implemented in the subclasses.
+This ensures that all subclasses have the same functionality.
+
+Interfaces are used to define a set of methods that a class must implement.
+They can only have abstract methods. Interfaces cannot have any fields or constructors.
+This makes interfaces more lightweight than abstract classes.
+
+So, why do we need abstract classes when we already have interfaces?
+
+Abstract classes can provide default implementations for methods. This can be useful if there is a common way to
+implement a method for all subclasses. For example, the Shape abstract class in Java provides a default
+implementation for the draw() method. This means that all subclasses of Shape can draw themselves without
+having to implement the draw() method themselves.
+
+Abstract classes can have fields. Interfaces cannot have fields, so abstract classes can be used to store data
+that is shared by all subclasses. For example, the Animal abstract class in Java has a field called name.
+This field is shared by all subclasses of Animal.
+
+Abstract classes can be extended by multiple classes. This can be useful if there are multiple classes that need
+to share the same functionality. For example, the Shape abstract class can be extended by classes such as Circle,
+Rectangle, and Triangle.
+
+In general, abstract classes are more flexible than interfaces. They can provide default implementations for methods,
+they can have fields, and they can be extended by multiple classes. However, interfaces are more lightweight and
+can be used to define a strict contract that must be implemented by all classes that implement the interface.
+
+The best way to decide whether to use an abstract class or an interface depends on the specific needs of the application.
