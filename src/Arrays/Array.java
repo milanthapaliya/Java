@@ -1,8 +1,23 @@
 package Arrays;
 
+
+import java.util.Arrays;
+
+class Student {
+    private int rollNo;
+    private String name;
+
+    Student(int roll, String name){
+        this.rollNo = roll;
+        this.name = name;
+    }
+    @Override
+    public String toString(){
+        return "Roll No: " + rollNo + ", Name: " + name;
+    }
+}
+
 public class Array {
-
-
     public static void main(String[] args) {
         /*
             1. Fixed size data structure.
@@ -32,9 +47,36 @@ public class Array {
         for(int i = 0; i < numbers1.length; i++){ // supports both read and write
             System.out.println(numbers1[i]);
         }
-        //aka forEach
+        // extended for: read only
         for(int i : numbers2){                  // supports read only
             System.out.println(i);
         }
+
+        // Array of Object
+        Student[] myStudents = new Student[]{new Student(1,"Milan"), new Student(2, "Thapaliya")};
+        for(Object student : myStudents){
+            System.out.println(student);
+        }
+
+
+        // Cloning of Array
+        int[] cloneArray = numbers1.clone();
+
+        //Comparing Arrays for Equality
+
+
+        System.out.println(numbers1 == cloneArray);             // will print false as deep copy is created for one-dimensional array
+        System.out.println(numbers1.equals(cloneArray));        // false
+        System.out.println(Arrays.equals(numbers1,cloneArray)); // true
+
+        Student[] cloneStudent = myStudents.clone();
+        System.out.println(Arrays.equals(myStudents,cloneStudent)); //true
+
+        // To compare multidimensional arrays for equality, use Arrays.deepEquals() instead
+
+        Object[] objA = {"a"};
+        Object[] objB = {"b"};
+        System.out.println(Arrays.deepEquals(objA, objB));       //false
+
     }
 }
