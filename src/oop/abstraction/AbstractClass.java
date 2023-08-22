@@ -3,7 +3,7 @@ package oop.abstraction;
 
 /*
     1. Abstraction is the process of hiding the unnecessary complexity from the user
-    2. Some times cases arises where methods are mandatory to be implemented by subclasses
+    2. Sometimes cases arises where methods are mandatory to be implemented by subclasses
     3. Abstract Class cannot be instantiated, but it can be subclassed
     4. Abstract methods are methods without body and they can only be implemented inside abstract class
     5. An abstract method is a method that is declared but not defined in a class. It acts as a placeholder for methods that must be implemented in subclasses
