@@ -1,0 +1,15 @@
+Cohesion in Java refers to the degree to which the methods and data of a class are related to each other.
+A class with high cohesion has methods and data that are all related to a single purpose. A class with
+low cohesion has methods and data that are related to multiple purposes.
+Cohesion in Java is the Object-Oriented principle most closely associated with making sure that a class is
+designed with a single, well-focused purpose. In object-oriented design, cohesion refers to how a single class
+is designed.
+
+Note: The more focused a class is, the more is the cohesiveness of that class.
+
+The advantage of high cohesion is that such classes are much easier to maintain (and less frequently changed)
+than classes with low cohesion. Another benefit of high cohesion is that classes with a well-focused purpose tend
+to be more reusable than other classes.
+
+In general, classes with high cohesion are more desirable than classes with low cohesion because they are easier
+to understand, maintain, and test.
