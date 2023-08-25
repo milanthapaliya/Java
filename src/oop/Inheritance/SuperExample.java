@@ -18,8 +18,9 @@ class Truck{
     int wheelCount;
     Truck(){
         /*
-        if the super class has a parameterized constructor then default constructor should be provided explicitly.
-        Compiler wont provide a default constructor in this case.
+         If a superclass has a parameterized constructor (a constructor that takes one or more parameters),
+         and you do not provide any constructors in the subclass, the compiler will not
+         automatically generate a default (no-argument) constructor for the subclass.
          */
         System.out.println("Super class default constructor called"); // This wont be shown as subclass is calling parameterized constructor.
     }
@@ -48,3 +49,4 @@ class SemiTruck extends Truck{
     }
 
 }
+
