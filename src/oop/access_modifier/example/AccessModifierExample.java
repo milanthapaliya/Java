@@ -22,18 +22,12 @@ class Person{ // default class
     String name; // default access modifier(accessible from same package)
     protected int age; // protected access modifier(accessible from same package or subclass from other packages)
     private int id; // private access modifier(accessible only from the class)
-    Person(){
-
-    }
     Person(String name, int age, int id){
         this.name = name;
         this.age = age;
         this.id = id;
     }
 
-    public void showId(){
-        System.out.println("ID is " + this.id);
-    }
     public void showDetails(){
         System.out.println("name = " + this.name + " age = " + this.age + " ID = " + this.id);
     }
@@ -50,9 +44,7 @@ class Person{ // default class
 }
 class Student extends Person{
     Student(String name, int age, int id){
-        this.name = name;
-        this.age = age;
-        this.setId(id);
+       super(name, age, id);
     }
 }
 
