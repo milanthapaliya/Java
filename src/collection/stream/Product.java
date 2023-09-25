@@ -1,4 +1,4 @@
-package stream;
+package collection.stream;
 
 public class Product {
     int id;

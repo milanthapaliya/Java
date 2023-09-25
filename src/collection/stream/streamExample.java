@@ -1,4 +1,4 @@
-package stream;
+package collection.stream;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -22,7 +22,7 @@ public class streamExample {
                 .map(p -> p.name)
                 .collect(Collectors.toList());
 
-        // find the max value using stream
+        // find the max value using collection.stream
         float maxPrice = products.stream().max((p1,p2) -> p1.price > p2.price ? 1 : -1).map(p -> p.price).get();
         System.out.println(maxPrice);
 
