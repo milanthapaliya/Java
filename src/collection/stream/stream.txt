@@ -1,0 +1,9 @@
+Java provides a new additional package in Java 8 called java.util.collection.stream. This package consists of classes, interfaces and enum to allows functional-style operations on the elements. You can use collection.stream by importing java.util.collection.stream package.
+
+Stream provides following features:
+
+Stream does not store elements. It simply conveys elements from a source such as a data structure, an array, or an I/O channel, through a pipeline of computational operations.
+Stream is functional in nature. Operations performed on a collection.stream does not modify it's source. For example, filtering a Stream obtained from a collection produces a new Stream without the filtered elements, rather than removing elements from the source collection.
+Stream is lazy and evaluates code only when required.
+The elements of a collection.stream are only visited once during the life of a collection.stream. Like an Iterator, a new collection.stream must be generated to revisit the same elements of the source.
+You can use collection.stream to filter, collect, print, and convert from one data structure to other etc.
