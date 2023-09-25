@@ -23,10 +23,6 @@
 hs_err_pid*
 replay_pid*
 
-<<<<<<< HEAD
 # build file
 /out/
-=======
-# ignore production build
-/out/
->>>>>>> 69aa5e89b1a39d0b38024b9f3700ad25355a02b3
+
